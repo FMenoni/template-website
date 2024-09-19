@@ -1,0 +1,48 @@
+/* Styles for a blurred background effect */
+.blurred-background {
+    backdrop-filter: blur(
+        5px
+    ); /* Apply a blur effect to the background for better visibility */
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Semi-transparent dark background color */
+}
+
+/* Styles for a background blob element */
+.background-blob {
+    position: absolute; /* Position the element absolutely within its container */
+    bottom: 40px; /* Position the element 40 pixels from the bottom */
+    right: 75px; /* Position the element 75 pixels from the right */
+    width: 250px; /* Set the width of the blob */
+    height: 150px; /* Set the height of the blob */
+    background: linear-gradient(
+        135deg,
+        rgba(75, 0, 130, 0.7) 0%,
+        /* Dark violet gradient starting point */ rgba(75, 0, 130, 0.7) 100%
+            /* Dark violet gradient ending point */
+    );
+    border-radius: 50%; /* Create a rounded, circular shape */
+    filter: blur(30px); /* Apply a moderate blur effect to the blob */
+    z-index: -1; /* Ensure the blob is positioned behind other elements */
+}
+
+/* Styles for a blinking cursor effect */
+.cursor {
+    display: inline-block; /* Display the cursor as an inline-block element */
+    width: 10px; /* Set the width of the cursor */
+    height: 22px; /* Set the height of the cursor */
+    background-color: rgb(0, 40, 0); /* Set the cursor color */
+    margin-left: 12px; /* Add space to the left of the cursor */
+    animation: blink 1s steps(1) infinite; /* Apply a blinking animation */
+    vertical-align: bottom; /* Align the cursor to the bottom */
+}
+
+/* Keyframes for the blinking animation */
+@keyframes blink {
+    50% {
+        opacity: 0; /* Make the cursor invisible at the midpoint of the animation */
+    }
+}

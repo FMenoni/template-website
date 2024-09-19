@@ -1,0 +1,9 @@
+/* Styles for the body element */
+body {
+    background-color: rgb(
+        10,
+        10,
+        10
+    ); /* Set a dark gray background color for the entire page */
+    scroll-behavior: smooth; /* Enable smooth scrolling for a better user experience */
+}
