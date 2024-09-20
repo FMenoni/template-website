@@ -1,6 +1,6 @@
 # React x FloatUI Template
 
-![Template Image](https://i.imgur.com/2g9clU2.png)
+![Template Image](https://i.imgur.com/vmaCkgu.png)
 
 ## Description
 
